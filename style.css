@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div::after{
+    background: black;
+    top: center;
+    left: center;
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 12%;
+    animation: anime 3s linear infinite;
+    transform: scaleX(0);
+    transform-origin: left;
+    mix-blend-mode: difference;
+}
+h2{
+    letter-spacing: 2px;
+    color: back;
+    animation: anime 3s linear infinite;
+}
+@keyframes anime{
+    to{
+        transform: scaleX(1);
+        color: white;
+    }
+}
